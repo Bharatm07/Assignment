@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background: radial-gradient(circle at left,#fff7ad, #ffaaf8);
+    font-family: "Figtree", sans-serif;
+    overflow-x: hidden;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* NAVBAR */
+.navbar{
+    background: #ff7171;
+    width: full;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;
+}
+.nav_links,.mob_nav_links{
+    text-decoration: none;
+    color: black;
+    font-family: serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.menubar,.cancel{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.menubar{
+    display: none;
+}
+
+/* mobile navbar */
+.sidebar{
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    flex-direction: column; 
+    width: 10rem; 
+    height: 100vh; 
+    background: white;
+    padding: 0 20px;
+}
+
+.mob_nav_links{
+    margin: 10px 0;
+}
+
+.cancel{
+    margin: 20px 0;
+    border-radius: 50%;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* section1 */
+
+.section1{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* LEFT CONTENT */
+.left_content{
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding-left: 50px;
+}
+.head1{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 800;
+}
+.para1{
+    line-height: 25px;
+    width: 80%;
+}
+.click_me{
+    margin-top: 20px;
+    border: none;
+    background: #ff7171;
+    color: white;
+    width: 200px;
+    padding: 10px;
+    font-family: "Figtree", sans-serif;
+}
+
+/* RIGHT IMAGE */
+.right_img{
+    width: 50%;
+    height: 100vh;
+    background: url(images/pexels-robin-stickel-70497.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* SECTION 2 */
+.section2{
+    margin: 20px 0;
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 0;
+}
+/* left_images */
+.left_images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.two_img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.img2{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+.sin_img{
+    width: 250px;
+    height: 410px;
+    object-fit: cover;
+}
+/* Right BOX CONTENT */
+
+.right_content{
+    background: #ff7171;
+    padding: 10px 20px;
+    width: 320px;
+}
+
+.head2{
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 7px;
+}
+.click_arrow{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@media (max-width:1024px){    
+    .section1{
+        justify-content: center;
+    }
+    .right_img{
+        width: 70%;
+        min-width: 250px;
+        height: 410px;
+    }
+    .left_content{
+        width: 70%;
+        padding-left: 0;
+    }
+    .section2{
+        display: block;
+    }
+    .right{
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:768px){
+    .para1{
+        width: 100%;
+    }
+    .nav_links{
+        display: none;
+    }
+    .menubar{
+        display: block;
+    }       
+}
+
+@media (max-width:400px){
+    .left_content{
+        padding: 30px;
+    }
+    .head2{
+        width: 250px;
+        font-size: 25px;
+        font-weight: 800;
+        letter-spacing: 7px;
+    }
+}

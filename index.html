@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECIPE PAGE</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+ 
+</head>
+<body>
+    <!-- %%%%%%%%%%% NAVBAR %%%%%%%%%%% -->
+    <!-- LAPTOP / TAB -->
+   <nav class="navbar">
+        <a class="nav_links" href="">Home</a>
+        <a class="nav_links" href="">Order</a>
+        <a class="nav_links" href="">Food</a>
+        <a class="nav_links" href="">Restaurant</a>
+        <a class="nav_links" href="">Testimonials</a>
+        <a class="nav_links" href="">Contact Us</a>
+        <img onclick = showSidebar() class="menubar" src="images/menu-bar.png" alt="menubar">
+   </nav>
+   <!-- MOBILE -->
+   <nav class="sidebar">
+        <div onclick = hideSidebar() class="cancel">
+            X
+        </div>
+        <a class="mob_nav_links" href="">Home</a>
+        <a class="mob_nav_links" href="">Order</a>
+        <a class="mob_nav_links" href="">Food</a>
+        <a class="mob_nav_links" href="">Restaurant</a>
+        <a class="mob_nav_links" href="">Testimonials</a>
+        <a class="mob_nav_links" href="">Contact Us</a>
+    </nav>
+
+    <!-- %%%%%%%%%%% SECTION-1 %%%%%%%%%%% -->
+    <div class="section1">
+        <!-- LEFT CONTENT -->
+        <div class="left_content">
+            <h1 class="head1">LOREM IPSUM</h1>
+            <p class="para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                id est vitae dolor rhoncus tristique. Maecenas metus quam,
+                rhoncus euismod lorem in, sollicitudin viverra eros. Donec
+                dictum luctus quam ut tristique. Curabitur nec faucibus purus.
+                Quisque congue sem nec justo mollis, in tincidunt erat pretium.
+                Sed pulvinar, massa ac porta viverra.</p>
+
+            <button class="click_me">Click Me</button>
+        </div>
+        <!-- RIGHT IMAGE -->
+        <div class="right_img"></div>
+    </div>
+
+    <!-- %%%%%%%%%%% SECTION-2 %%%%%%%%%%% -->
+    <div class="section2">
+        <!-- LEFT IMAGES -->
+        <div class="left_images">
+            <div class="two_img">
+                <img class="img2" src="images/pexels-rachel-claire-6752433.jpg" alt="">
+                <img class="img2" src="images/pexels-eva-bronzini-6141651.jpg" alt="">
+            </div>
+            <div class="single_img">
+                <img class="sin_img" src="images/pexels-mister-mister-3434523.jpg" alt="">
+            </div>
+        </div>        
+        <!-- RIGHT CONTENT -->
+        <div class="right">
+            <div class="right_content">
+                <p>LOREM IPSUM</p>
+                <h1 class="head2">LOREM IPSUM SET ADEMIR</h1>
+                <div class="click_arrow">
+                    <p>Click</p>
+                    <img src="images/icons8-arrow-30.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
